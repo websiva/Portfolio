@@ -1,0 +1,146 @@
+/*****************************Projects***********************/
+
+#Projects {
+    background-color: #F0F1F3;
+}
+.category-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+.category-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color:black;
+    box-shadow: 0 4px 30px rgba(165, 61, 255,0.2);
+    margin: 0;
+    border: 2px solid var(--primary-5);
+    border-radius: 50px;
+}
+.category-container ul li{
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+.category-container ul li:nth-child(1) button{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.category-container ul li:last-child button{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.category-container ul li button{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-container ul li:not(:last-child){
+    border-right: 2px solid var(--primary-5);
+}
+.category-container ul li button:hover{
+    background-color: var(--primary-5);
+    color: white;
+}
+.active-button{
+    background-color: var(--primary-5);
+    color: white;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects-container .card {
+    width: 330px;
+    height: 490px;
+    box-shadow: 10px;
+    padding: 26px 20px;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.list-group {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0;
+    margin: 5px 5px 5px 0px;
+    border-radius: 0;
+}
+
+.list-group-item Button {
+    font-size: 10px;
+    background-color: var(--primary-5);
+    border-radius: 8px;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+
+#Projects .modal-dialog .list-group-item Button {
+    font-size: 12px;
+}
+
+#Projects .modal-dialog {
+    width: 95%;
+    max-width: 600px;
+}
+
+#Projects .modal-dialog .modal-image img {
+    width: 100%;
+    object-fit: fill;
+}
+
+#Projects .modal-dialog .modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Projects .modal-dialog .modal-footer Button {
+    width: 40%;
+    margin: 0 10px;
+    background-color: var(--primary-5);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .category-container ul li button {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 10px 15px; /* Reduced left-right padding */
+    }
+}
+

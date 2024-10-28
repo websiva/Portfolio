@@ -1,0 +1,572 @@
+<div class="container-fluid overflow-hidden" id="home-container">
+    <!--Navbar-->
+    <section id="navbar" class="bg-white">
+        <div class="row">
+            <nav class="navbar fixed-top navbar-expand-xl bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Techsiva</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item" [class.active]="activeMenuItem=='about'">
+                                <a class="nav-link" (click)="setActiveMenuItem('about')" routerLink="/"
+                                    fragment="About">About</a>
+                            </li>
+                            <li class="nav-item" [class.active]="activeMenuItem=='skills'">
+                                <a class="nav-link" (click)="setActiveMenuItem('skills')" routerLink="/"
+                                    fragment="Skills">Skills</a>
+                            </li>
+                            <li class="nav-item" [class.active]="activeMenuItem=='experiences'">
+                                <a class="nav-link" (click)="setActiveMenuItem('experiences')" routerLink="/"
+                                    fragment="AllExperience">Experiences</a>
+                            </li>
+                            <li class="nav-item" [class.active]="activeMenuItem=='education'">
+                                <a class="nav-link" (click)="setActiveMenuItem('education')" routerLink="/"
+                                    fragment="education">Education</a>
+                            </li>
+                            <li class="nav-item" [class.active]="activeMenuItem=='projects'">
+                                <a class="nav-link" (click)="setActiveMenuItem('projects')" routerLink="/"
+                                    fragment="Projects">Projects</a>
+                            </li>
+                            <li class="nav-item" [class.active]="activeMenuItem=='certifications'">
+                                <a class="nav-link" (click)="setActiveMenuItem('certifications')" routerLink="/"
+                                    fragment="certifications">Certifications</a>
+                            </li>
+                            <li class="nav-item" [class.active]="activeMenuItem=='contactForm'">
+                                <a class="nav-link" (click)="setActiveMenuItem('contactForm')" routerLink="/"
+                                    fragment="contactForm">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="GitHubbutton">
+                            <button class="btn GithubButton my-3" type="submit">
+                                <a href="https://github.com/websiva" target="_blank">GitHub</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!--About section-->
+    <section id="About" class="d-flex align-items-center justify-content-center mt-0">
+        <div class="row m-0">
+            <div class="col-xl-6 name-content d-flex flex-column">
+                <h1 class="about-name">Hi, I am <br> Sivakumar A</h1>
+                <div class="wrapper">
+                    <div class="static-text">I'm a</div>
+                    <ul class="dynamic-txts">
+                        <li><span>Frontend Developer</span></li>
+                        <li><span>Angular Developer</span></li>
+                        <li><span>.NET Developer</span></li>
+                        <li><span>ASP.NET Developer</span></li>
+                    </ul>
+                </div>
+                <div class="about-intro text-justify">
+                    <p>A skilled .NET developer with a strong portfolio, passionate about staying updated on
+                        frontend
+                        and backend tech. Collaborative and committed to quality, you thrive in dynamic teams. Eager
+                        to
+                        contribute creativity and bring innovative ideas to life.</p>
+                </div>
+                <div class="downloadcv">
+                    <button class="btn downloadCV"><a style="text-decoration: none; color: white;" target="_blank"
+                            href="https://docs.google.com/document/d/1AQUb1jxfUBgzKHDNSvnrLMyYiqzIWeWC/edit?usp=drive_link&ouid=104914327795036293135&rtpof=true&sd=true">
+                            Download CV</a></button>
+                </div>
+            </div>
+            <div class="col-xl-6 profile-picture d-flex justify-content-center mt-4">
+                <img src="profile.jpg" alt="profile">
+            </div>
+        </div>
+    </section>
+    <!--Skills-->
+    <section id="Skills">
+        <div class="section-heading">
+            <h1 class="text-center section-title">Skills</h1>
+        </div>
+        <div class="row g-3">
+            <div class="all-skills d-flex justify-content-center align-items-center">
+                <!--Web development-->
+                <div class="skill-type">
+                    <h4 class="text-center skill-type-heading">Web Development</h4>
+                    <div class="skill-container  d-flex align-items-center flex-wrap justify-content-center">
+                        <div class="skill">
+                            <img src="html-5.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">HTML</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="css-3.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">CSS</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="bootstrap.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Bootstrap</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="javascript.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">JavaScript</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="angular.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Angular</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="dotnet.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">WebAPI</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="dotnet.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">MVC</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="sql.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">MS SQL</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--Desktop application-->
+                <div class="skill-type">
+                    <h4 class="skill-type-heading text-center">Desktop Development</h4>
+                    <div class="skill-container  d-flex align-items-center flex-wrap justify-content-center">
+                        <div class="skill">
+                            <img src="dotnet.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Winforms</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="dotnet.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">WPF</h6>
+                        </div>
+                    </div>
+                </div>
+                <!--Others-->
+                <div class="skill-type">
+                    <h4 class="skill-type-heading text-center">Others</h4>
+                    <div class="skill-container d-flex align-items-center flex-wrap justify-content-center">
+                        <div class="skill">
+                            <img src="figma.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Figma</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="git.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Git</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="github.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">GitHub</h6>
+                        </div><br>
+                        <div class="skill">
+                            <img src="jira.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Jira</h6>
+                        </div>
+                        <div class="skill">
+                            <img src="visual-studio.svg" class="skillImage" alt="">
+                            <h6 class="SkillName text-center">Visual Studio</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Experience-->
+    <section id="AllExperience" class="container-fluid">
+        <div class="section-heading text-center my-5">
+            <h1 class="section-title">Experiences</h1>
+        </div>
+        <div class="row">
+            <div class="experience col-xl-6">
+                <header class="Title text-center">
+                    <h3>Work Experience</h3>
+                </header>
+                <div class="contents">
+                    <div class="left-line"></div>
+                    <div class="boxes">
+                        <div class="box" data-bs-toggle="modal" data-bs-target="#treffer-technologies">
+                            <h5>CAD Design Engineer</h5>
+                            <h6>June 2022 - Nov 2023</h6>
+                            <p>Treffer Technologies <i>Coimbatore</i></p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#treffer-technologies">See Details</a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="treffer-technologies" tabindex="-1"
+                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">CAD Design Engineer</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="job-description">
+                                            <p class="text-justify">As a CAD Design Designer at Treffer Technologies, I
+                                                specialized in creating sales purpose
+                                                drawings using PTC Creo. My role focused on developing visually
+                                                appealing and informative
+                                                CAD representations tailored for sales presentations and marketing
+                                                materials. Working
+                                                closely with sales and marketing teams, I translated product concepts
+                                                into engaging visual
+                                                assets that effectively communicated features and benefits to clients.
+                                            </p>
+                                            <p><b>Key Responsibilities and Achievements:</b></p>
+                                            <ul>
+                                                <li class="text-justify">Created compelling 2D and 3D CAD drawings using
+                                                    PTC Creo for sales and
+                                                    marketing purposes.</li>
+                                                <li class="text-justify">Collaborated with sales teams to understand
+                                                    client requirements and develop
+                                                    customized visual solutions.</li>
+                                                <li class="text-justify">Contributed to the enhancement of product
+                                                    presentations, increasing client
+                                                    engagement and sales opportunities.</li>
+                                                <li class="text-justify">Ensured accuracy and quality in all drawings,
+                                                    adhering to brand guidelines and
+                                                    design standards.</li>
+                                                <li class="text-justify">Played a pivotal role in improving the
+                                                    visualization of products, positively
+                                                    impacting sales strategies and outcomes.</li>
+                                            </ul><br>
+                                            <p class="text-justify">This role refined my skills in CAD design for sales
+                                                purposes and strengthened my ability
+                                                to align technical details with marketing objectives.</p>
+                                            <p><b>Achievements:</b></p>
+                                            <p style="color: var(--primary-5); font-weight: bold;">Best Employee of the
+                                                year(2023)</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience col-xl-6">
+                <header class="Title text-center">
+                    <h3>Internship Experience</h3>
+                </header>
+                <div class="contents">
+                    <div class="left-line"></div>
+                    <div class="boxes">
+                        <div class="box" data-bs-toggle="modal" data-bs-target="#glacier-technologies">
+                            <h5>Full Stack Web Developer</h5>
+                            <h6>June 2023 - Nov 2023</h6>
+                            <p>Glacier Technology <i>Coimbatore</i></p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#glacier-technologies">See Details</a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="glacier-technologies" tabindex="-1"
+                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Full Stack Web Developer</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="job-description">
+                                            <p class="text-justify">During a comprehensive 6-month internship, I gained
+                                                practical experience in
+                                                both frontend and backend development by working on an e-commerce
+                                                project. I
+                                                learned foundational web technologies and successfully completed the
+                                                project
+                                                by leveraging various modern tools and frameworks.</p>
+                                            <p><b>Learned Skills:</b></p>
+                                            <ul>
+                                                <li>HTML, CSS, and Bootstrap</li>
+                                                <li>Angular</li>
+                                                <li>ASP.NET Web API</li>
+                                                <li>SQL Server</li>
+                                                <li>Cloud deployment on AWS EC2</li>
+                                            </ul><br>
+                                            <p style="font-weight: bold;">E-commerce Project:</p>
+                                            <ul>
+                                                <li class="text-justify">Developed an e-commerce website using HTML,
+                                                    CSS, Bootstrap, Angular,
+                                                    ASP.NET Web API, and SQL Server.</li>
+                                                <li class="text-justify">Implemented various functionalities such as
+                                                    user authentication, product
+                                                    catalog, shopping cart, and order management.</li>
+                                                <li class="text-justify">Deployed the project on AWS EC2, ensuring
+                                                    scalability and reliability.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box" data-bs-toggle="modal" data-bs-target="#medevPlus">
+                            <h5>Jr Dot Net Developer</h5>
+                            <h6>Feb 2024 - July 2024</h6>
+                            <p>MedevPlus <i>Bangalore</i></p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#medevPlus">See Details</a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="medevPlus" tabindex="-1" aria-labelledby="exampleModalLongTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Jr Dot Net Developer</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="job-description">
+                                            <p class="text-justify">During my internship, I was actively involved in
+                                                developing desktop
+                                                applications using .NET Windows Forms and WPF, focusing primarily on
+                                                front-end development and UI/UX design. This role provided an
+                                                opportunity to
+                                                refine my skills in creating user-friendly interfaces and implementing
+                                                design prototypes using Figma. Additionally, I gained hands-on
+                                                experience
+                                                with both .NET Framework and .NET Core, applying these frameworks to
+                                                build
+                                                efficient and scalable applications. This experience significantly
+                                                strengthened my technical abilities and enhanced my understanding of
+                                                software development practices in a professional setting.</p>
+                                            <p><b>Learned Skills:</b></p>
+                                            <ul>
+                                                <li>Front-end development with .NET Windows Forms and WPF</li>
+                                                <li>UI/UX design using Figma</li>
+                                                <li>.NET Framework</li>
+                                                <li>.NET Core</li>
+                                            </ul><br>
+                                            <p style="font-weight: bold;">Desktop Applications:</p>
+                                            <ul>
+                                                <li class="text-justify">Developed desktop applications using .NET
+                                                    Windows Forms and WPF, focusing on creating intuitive and
+                                                    user-friendly interfaces.</li>
+                                                <li class="text-justify">Utilized Figma for designing and prototyping
+                                                    UI/UX elements.</li>
+                                                <li class="text-justify">Deployed the project on AWS EC2, ensuring
+                                                    scalability and reliability.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Hiring invitation-->
+    <section id="hiringInvitation">
+        <div class="row d-flex flex-column justify-content-center">
+            <h2 class="text-center"> Interested in My Profile? Let's Connect!</h2>
+            <p class="text-center"> I am always open to discussing new projects, creative ideas, or opportunities <br>to
+                be part of your
+                visions. If you are interested in collaborating or just want to say hi, feel free to get in touch!</p>
+            <div class="connectnowButton d-flex justify-content-center">
+                <button class="w-auto text-white"><a style="text-decoration: none; color:white;"
+                        (click)="setActiveMenuItem('contactForm')" routerLink="/" fragment="contactForm">Let's
+                        Connect</a></button>
+            </div>
+
+        </div>
+    </section>
+    <!--Education-->
+    <section id="education">
+        <div class="section-heading">
+            <h1 class="text-center section-title">Education</h1>
+        </div>
+        <div class="row">
+            <div class="education d-flex justify-content-center flex-wrap">
+                <div class="education-card">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <h4 class="card-title degree">Higher Secondary</h4>
+                            <p class="degree">Biology-Mathematics</p>
+                            <p class="card-text degree-description">Bishop Heber Higher Secondary School <br>Trichy,
+                                Tamilnadu
+                                <br>Percentage: 82.41%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <h4 class="card-title">Bacholers Degree</h4>
+                            <p class="degree">BE - Mechanical Engineering</p>
+                            <p class="card-text degree-description">Sri Ramakrishna Engineering College <br>Coimbatore,
+                                Tamilnadu
+                                <br>CGPA: 7.71
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Projects-->
+    <section id="Projects">
+        <app-project></app-project>
+    </section>
+    <!--Certifications-->
+    <section id="certifications">
+        <div class="section-heading">
+            <h1 class="text-center section-title">Certifications</h1>
+        </div>
+        <p class="text-center">I have worked on a wide range of projects. From websites to web <br>apps. Here are
+            some of my projects.</p>
+        <div class="row">
+            <div class="certifications-container d-flex justify-content-center align-items-center flex-wrap py-5">
+                <!--Certificate-->
+                <div *ngFor="let certificate of Certificates" class="certificate-box m-3 d-flex">
+                    <div class="provider mr-3 d-flex align-items-center">
+                        <img class="provider-image" [src]=certificate.providerImg>
+                    </div>
+                    <div class="certificate-headinganddetails d-flex flex-column justify-content-between w-100">
+                        <h4 class="certificate-title" style="margin: 0;font-size: 1.25rem;">
+                            {{certificate.title}}
+                            <br>
+                            <span class="date"
+                                style="font-size: 0.75rem;display: block;font-weight: 300;margin-top: 0.25rem;">{{certificate.issuedDate}}</span>
+                        </h4>
+                        <Button class="viewDetails mt-2 w-50"><a style="text-decoration: none; color: white;"
+                                [href]="certificate.link" target="_blank">View
+                                certificate</a></Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Form-->
+    <section id="contactForm">
+        <div class="row mx-lg-5">
+            <div class="col-lg-6 contact-form-left">
+                <h3>Contact me!</h3>
+                <p class="text-justify">Below, you'll find my contact details along with links to my social media
+                    profiles. Feel free to reach out to me using any of these channels.</p>
+                <div class="contact-boxes pl-3">
+                    <div class="left-box">
+                        <div class="icon-container">
+                            <i class="bi bi-geo-alt-fill contact-form-left-icons h4"></i>
+                        </div>
+                        <div class="left-box-text">
+                            <p>Address:</p>
+                            <address>
+                                1/14, North Street, Velur,<br>
+                                Chatrapatti, Oddanchatram, <br>
+                                Dindigul, Tamilnadu, <br>
+                                624614
+                            </address>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="icon-container">
+                            <i class="bi bi-envelope-arrow-up-fill contact-form-left-icons h4"></i>
+                        </div>
+                        <div class="left-box-text">
+                            <p>My Email:</p>
+                            <p>sivatech8344&#64;gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="left-box">
+                        <div class="icon-container">
+                            <i class="bi bi-phone contact-form-left-icons h4 p-0"></i>
+                        </div>
+                        <div class="left-box-text">
+                            <p>My Mobile:</p>
+                            <p>+91 8344288188</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-social-icons">
+                    <i class="bi bi-linkedin h4"><a href="https://www.linkedin.com/in/sivakumar1202/"
+                            target="_blank"></a></i>
+                    <i class="bi bi-whatsapp h4"></i>
+                    <i class="bi bi-instagram h4"></i>
+                    <i class="bi bi-facebook h4"></i>
+                </div>
+            </div>
+            <div class="col-lg-6 contact-form-right">
+                <p>Using the contact form below, you can reach out to me for any inquiries or collaborations. Let’s
+                    discuss your project and explore how we can work together to achieve your goals.</p>
+                <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                    <label class="form_label my-2">First Name <sup>*</sup></label>
+                    <input type="text" name="first" [(ngModel)]="firstname" class="form-control" #first="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && first.invalid }" required>
+                    <div class="email">
+                        <label for="" class="form_label my-2">Email <sup>*</sup></label>
+                        <input type="email" class="form-control" name="mail" #mail="ngModel" [(ngModel)]="mailid"
+                            [ngClass]="{'is-invalid':f.submitted && mail.errors}" required>
+                    </div>
+                    <label class="form_label my-2">Message</label>
+                    <textarea type="text" rows="6" name="message" [(ngModel)]="message" class="form-control"
+                        #first="ngModel" [ngClass]="{ 'is-invalid': f.submitted && first.invalid }" required></textarea>
+                    <button type="submit" class="w-25 fw-bold px-2 py-1 mt-3">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section id="footer">
+        <div class="footer-content-nav">
+            <a class="navbar-brand" style="color: white;" href="#">Techsiva</a>
+            <div class="menus">
+                <ul class="navbar-items mb-0 pl-0">
+                    <li class="nav-item" [class.active]="activeMenuItem=='about'">
+                        <a class="nav-link" (click)="setActiveMenuItem('about')" routerLink="/"
+                            fragment="About">About</a>
+                    </li>
+                    <li class="nav-item" [class.active]="activeMenuItem=='skills'">
+                        <a class="nav-link" (click)="setActiveMenuItem('skills')" routerLink="/"
+                            fragment="Skills">Skills</a>
+                    </li>
+                    <li class="nav-item" [class.active]="activeMenuItem=='experiences'">
+                        <a class="nav-link" (click)="setActiveMenuItem('experiences')" routerLink="/"
+                            fragment="AllExperience">Experiences</a>
+                    </li>
+                    <li class="nav-item" [class.active]="activeMenuItem=='education'">
+                        <a class="nav-link" (click)="setActiveMenuItem('education')" routerLink="/"
+                            fragment="education">Education</a>
+                    </li>
+                    <li class="nav-item" [class.active]="activeMenuItem=='projects'">
+                        <a class="nav-link" (click)="setActiveMenuItem('projects')" routerLink="/"
+                            fragment="Projects">Projects</a>
+                    </li>
+                    <li class="nav-item" [class.active]="activeMenuItem=='certifications'">
+                        <a class="nav-link" (click)="setActiveMenuItem('certifications')" routerLink="/"
+                            fragment="certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item" [class.active]="activeMenuItem=='contactForm'">
+                        <a class="nav-link" (click)="setActiveMenuItem('contactForm')" routerLink="/"
+                            fragment="contactForm">Contact</a>
+                    </li>
+                </ul>
+                <div class="GitHubbutton">
+                    <button class="btn GithubButton" type="submit" onclick=""><a href="https://github.com/websiva"
+                            target="_blank">GitHub</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

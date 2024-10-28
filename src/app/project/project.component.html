@@ -1,0 +1,71 @@
+<div id="Projects">
+    <div class="section-heading">
+        <h1 class="text-center section-title">Projects</h1>
+    </div>
+    <p class="text-center">I have worked on a wide range of projects. From websites to web <br>apps. Here are
+        some of my projects.</p>
+    <div class="category-container">
+        <ul>
+            <li><button [ngClass]="{'active-button':activeCategory==='All'}"
+                    (click)="filterProjects('All')">All</button></li>
+            <li><button [ngClass]="{'active-button':activeCategory==='Angualr'}"
+                    (click)="filterProjects('Angular')">Angular</button></li>
+            <li><button [ngClass]="{'active-button':activeCategory==='JavaScript'}"
+                    (click)="filterProjects('JavaScript')">Javascript</button></li>
+            <li><button [ngClass]="{'active-button':activeCategory==='HTML_CSS'}"
+                    (click)="filterProjects('HTML_CSS')">HTML&CSS</button></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="projects-container p-lg-4">
+            <div class="p-0" *ngFor="let project of displayedProject">
+                <div class="card m-3" data-bs-toggle="modal" [attr.data-bs-target]="'#' + getModalId(project.title)">
+    <div class="card-img">
+        <img class="card-img-top" [src]="project.image" alt="Card image cap">
+    </div>
+    <ul class="list-group d-flex flex-row">
+        <li *ngFor="let tech of project.technologies" class="list-group-item">
+            <button>{{ tech }}</button>
+        </li>
+    </ul>
+    <div class="card-body p-0">
+        <h5 class="card-title m-0">{{ project.title }}</h5>
+        <span>{{ project.year }}</span>
+        <p class="card-text text-justify mt-2">{{ project.description }}</p>
+    </div>
+</div>
+
+<div class="modal fade" [id]="getModalId(project.title)" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">{{ project.title }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img [src]="project.image" alt="">
+                </div>
+                <div class="job-description">
+                    <ul class="list-group d-flex flex-row">
+                        <li *ngFor="let tech of project.technologies" class="list-group-item">
+                            <button>{{ tech }}</button>
+                        </li>
+                    </ul><br>
+                    <ul>
+                        <li *ngFor="let detail of project.details" class="text-justify">{{ detail }}</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"><a style="text-decoration: none; color: white;" [href]="project.codeLink" target="_blank">View Code</a></button>
+                    <button type="button"><a style="text-decoration: none; color: white;" [href]="project.projectLink" target="_blank">View Project</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>

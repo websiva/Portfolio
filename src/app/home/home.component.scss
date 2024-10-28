@@ -1,0 +1,678 @@
+#home-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+section:not(:first-of-type) {
+    padding: 30px 15%;
+}
+
+nav {
+    padding: 0 15%;
+}
+
+section .row:first-of-type {
+    padding: 40px 0;
+}
+
+section:not(:nth-of-type(2)) div:first-of-type h1:first-of-type {
+    font-size: 2.25rem;
+    color: var(--primary-5);
+    margin-bottom: 40px;
+}
+
+/*******************************Navbar*************************/
+
+.navbar-brand {
+    color: var(--primary-5);
+    font-size: var(--Heading3-fontSize);
+    font-weight: var(--Heading3-fontWeight);
+}
+
+#navbar .nav-link {
+    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    transition: border-bottom 0.3s ease;
+}
+
+#navbar .nav-item.active .nav-link {
+    color: var(--primary-5) !important;
+}
+
+#navbar .nav-item {
+    margin: 20px 20px;
+}
+
+.nav-link:hover {
+    color: var(--primary-5) !important;
+    border-bottom: 2px solid var(--primary-5) !important;
+}
+
+.GithubButton {
+    background-color: var(--primary-5);
+}
+
+.GithubButton a {
+    color: var(--white-1);
+    text-decoration: none;
+}
+
+/************************About ************************/
+#About {
+    background-image: url('../../../public/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#About .row {
+    width: 100%;
+    max-width: 1300px;
+    padding: 100px 0;
+}
+
+.name-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.about-intro,
+.about-name,
+.role,
+.downloadcv {
+    width: 100%;
+
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wrapper .static-text {
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+.wrapper .dynamic-txts {
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.wrapper .dynamic-txts li {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    animation: slide 8s steps(4) infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-360px); }
+}
+
+.wrapper .dynamic-txts li span {
+    position: relative;
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--primary-5);
+}
+
+.wrapper .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    border-left: 2px solid var(--primary-5);
+    animation: positionChanging 2s steps(18) infinite;
+}
+
+@keyframes positionChanging {
+    0% { left: 0; }
+    100% { left: 100%; }
+}
+
+.about-name {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.role h2 {
+    font-size: 2rem;
+}
+
+.about-intro p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.profile-picture img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.downloadCV {
+    font-size: var(--Regular2-fontSize);
+    background-color: var(--primary-5);
+    color: var(--white-1);
+}
+
+/********************************Skills********************/
+
+.skill-type {
+    width: 100%;
+    max-width: 400px;
+    min-height: 230px;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid var(--primary-5);
+    border-radius: 10px;
+}
+
+.all-skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.skillImage {
+    width: auto;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.skillName {
+    font-size: 14px;
+    text-align: center;
+}
+
+/***********************************Education*********************/
+
+.education-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+/*******************************Experience*********************/
+
+#AllExperience,
+#Skills {
+    background-color: #F0F1F3;
+}
+
+#AllExperience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#AllExperience .row {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience Header.Title {
+    padding: 0px 0px 20px 0px;
+}
+
+.contents {
+    width: Auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contents .boxes {
+    padding-left: 30px;
+    border-left: 3px solid var(--primary-5);
+}
+
+.contents .boxes .box {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid var(--primary-6);
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.contents .boxes .box:hover {
+    box-shadow: 0px 3px 12px 0px;
+    border: 1px solid transparent;
+}
+
+.contents .boxes .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: calc(100% + 24px);
+    top: 0;
+    border-radius: 50%;
+    background-color: var(--primary-5);
+    border: 2px solid white;
+}
+
+/*******************************Hiring notification*************/
+
+#hiringInvitation {
+    background-color: var(--primary-9);
+}
+
+#hiringInvitation h2 {
+    color: white;
+    margin: 20px 0;
+}
+
+#hiringInvitation p {
+    margin: 20px 0;
+    color: var(--white-4);
+}
+
+.connectnowButton Button {
+    background-color: var(--primary-5);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+}
+
+/*****************************Projects***********************/
+
+#Projects {
+    background-color: #F0F1F3;
+}
+.category-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+.category-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color:black;
+    box-shadow: 0 4px 30px rgba(165, 61, 255,0.2);
+    margin: 0;
+    border: 2px solid var(--primary-5);
+    border-radius: 50px;
+}
+.category-container ul li{
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+.category-container ul li:nth-child(1) button{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.category-container ul li:last-child button{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.category-container ul li button{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    height: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category-container ul li:not(:last-child){
+    border-right: 2px solid var(--primary-5);
+}
+.category-container ul li button:hover{
+    background-color: var(--primary-5);
+    color: white;
+}
+.active-button{
+    background-color: var(--primary-5);
+    color: white;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects-container .card {
+    width: 330px;
+    height: 490px;
+    box-shadow: 10px;
+    padding: 26px 20px;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.list-group {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.list-group-item {
+    border: none;
+    padding: 0;
+    margin: 5px 5px 5px 0px;
+    border-radius: 0;
+}
+
+.list-group-item Button {
+    font-size: 10px;
+    background-color: var(--primary-5);
+    border-radius: 8px;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+
+#Projects .modal-dialog .list-group-item Button {
+    font-size: 12px;
+}
+
+#Projects .modal-dialog {
+    width: 95%;
+    max-width: 600px;
+}
+
+#Projects .modal-dialog .modal-image img {
+    width: 100%;
+    object-fit: fill;
+}
+
+#Projects .modal-dialog .modal-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Projects .modal-dialog .modal-footer Button {
+    width: 40%;
+    margin: 0 10px;
+    background-color: var(--primary-5);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/**************************************Certificates*********************/
+
+.certificate-box {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 120px;
+    padding: 10px 0;
+    border: 2px solid var(--primary-5);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.certificate-box:hover {
+    box-shadow: 0px 3px 10px 0px;
+}
+
+.provider-image {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    object-fit: fill;
+}
+
+.viewDetails {
+    background-color: var(--primary-5);
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid var(--primary-5);
+    border-radius: 6px;
+    color: white;
+}
+
+
+/**************************Contact form*******************/
+#contactForm {
+    background-color: var(--white-2);
+    display: flex;
+    justify-content: center;
+}
+
+#contactForm .row {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 20px var(--primary-3);
+}
+
+.contact-form-left {
+    padding-left: 20px;
+}
+
+.left-box {
+    display: flex;
+    margin: 20px 0;
+}
+
+.contact-form-left-icons {
+    color: var(--primary-5);
+}
+
+.left-box-text {
+    margin-left: 20px;
+}
+
+.left-box-text p {
+    margin: 0;
+}
+
+.contact-form-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+}
+
+.contact-form-social-icons i {
+    color: var(--primary-5);
+    margin-right: 30px;
+}
+
+.contact-form-right {
+    padding-left: 20px;
+}
+
+.contact-form-right Button {
+    background-color: var(--primary-5);
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+/***********************************footer*********************/
+#footer {
+    background-color: var(--white-9);
+}
+
+.footer-content-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .nav-item {
+    margin: 20px 20px;
+}
+
+#footer .menus {
+    display: flex;
+    align-items: center;
+}
+
+#footer .navbar-items {
+    display: block;
+}
+
+.navbar-items .nav-item {
+    list-style-type: none;
+}
+
+.navbar-items .nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/*******************************Media Query****************/
+@media only screen and (max-width:5120px) and (min-width:1200px) {
+    section:not(:first-of-type) {
+        padding: 40px 10%;
+    }
+
+    nav {
+        padding: 0 10%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .contents .boxes .box {
+        min-width: 400px;
+    }
+
+    #footer .navbar-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .GitHubbutton {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px)and (min-width:998px) {
+    section:not(:first-of-type) {
+        padding: 40px 5%;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+    .wrapper .dynamic-txts li span {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 992px)and (min-width:768px) {
+    section:not(:first-of-type) {
+        padding: 40px 5%;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+    .wrapper .dynamic-txts li span {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width:576px) {
+    section:not(:first-of-type) {
+        padding: 40px 5%;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+    .wrapper .dynamic-txts li span {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 576px) and (min-width:200px) {
+    section:not(:first-of-type) {
+        padding: 30px 2%;
+    }
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .navbar-brand {
+        color: var(--primary-5);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #About .row {
+        padding: 0px 0;
+    }
+    .wrapper .static-text {
+        font-size: 40px;
+    }
+    .wrapper .dynamic-txts li span {
+        font-size: 32px;
+    }
+
+}

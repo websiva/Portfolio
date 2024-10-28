@@ -1,0 +1,150 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
+
+:root{
+    //Primary color shadows
+    --primary-1:#EDD8FF;
+    --primary-2:#DBB1FF;
+    --primary-3:#C98BFF;
+    --primary-4:#B764FF;
+    --primary-5:#A53DFF;
+    --primary-6:#8431CC;
+    --primary-7:#632599;
+    --primary-8:#421866;
+    --primary-9:#210C33;
+
+    //White shadows
+    --white-1:#ffffff;
+    --white-2:#F0F1F3;
+    --white-3:#E6E8EB;
+    --white-4:#C3C7CE;
+    --white-5:#A5ACB5;
+    --white-6:#87909D;
+    --white-7:#697484;
+    --white-8:#556070;
+    --white-9:#424E60;
+    --white-10:#2B384C;
+    --white-11:#132238;
+
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+    --font-weight-black: 900;
+
+    //Heading 1
+    --Heading1-fontFamily:'Inter', sans-serif;
+    --Heading1-fontSize:48px;
+    --Heading1-fontWeight:var(--font-weight-semi-bold);
+    --Heading1-lineHeight:56px;
+
+    //Heading 2
+    --Heading2-fontFamily:'Inter', sans-serif;
+    --Heading2-fontSize:38px;
+    --Heading2-fontWeight:var(--font-weight-semi-bold);
+    --Heading2-lineHeight:50px;
+
+    //Heading 3
+    --Heading3-fontFamily:'Inter', sans-serif;
+    --Heading3-fontSize:32px;
+    --Heading3-fontWeight:var(--font-weight-semi-bold);
+    --Heading3-lineHeight:40px;
+
+    //Heading 4
+    --Heading4-fontFamily:'Inter', sans-serif;
+    --Heading4-fontSize:24px;
+    --Heading4-fontWeight:var(--font-weight-semi-bold);
+    --Heading4-lineHeight:100%;
+
+    //Heading 5
+    --Heading5-fontFamily:'Inter', sans-serif;
+    --Heading5-fontSize:20px;
+    --Heading5-fontWeight:var(--font-weight-semi-bold);
+    --Heading5-lineHeight:24px;
+
+    //Body
+
+    //Thin-Regular
+    --Thin1-fontFamily:'Inter', sans-serif;
+    --Thin1-fontsize:12px;
+    --Thin1-fontWeight:var(var(--font-weight-regular));
+    --Thin1-lineHeight:16px;
+
+    //Thin-Semibold
+    --Thin2-fontFamily:'Inter', sans-serif;
+    --Thin2-fontsize:12px;
+    --Thin2-fontWeight:var(var(--font-weight-medium));
+    --Thin2-lineHeight:16px;
+
+    //Thin-Semibold
+    --Thin3-fontFamily:'Inter', sans-serif;
+    --Thin3-fontsize:12px;
+    --Thin3-fontWeight:var(--font-weight-semi-bold);
+    --Thin3-lineHeight:16px;
+
+    //small-Regular
+    --Small1-fontFamily:'Inter',sans-serif;
+    --small1-fontSize:14px;
+    --small1-fontWeight:var(var(--font-weight-regular));
+    --small1-lineHeight:20px;
+
+    //small-Medium
+    --Small2-fontFamily:'Inter',sans-serif;
+    --small2-fontSize:14px;
+    --small2-fontWeight:var(var(--font-weight-medium));
+    --small2-lineHeight:20px;
+
+    //small-Semibold
+    --Small3-fontFamily:'Inter',sans-serif;
+    --small3-fontSize:14px;
+    --small3-fontWeight:var(var(--font-weight-semi-bold));
+    --small3-lineHeight:20px;
+
+    //Regular-Regular
+    --Regular1-fontFamily:'Inter',sans-serif;
+    --Regular1-fontSize:16px;
+    --Regular1-fontWeight:var(var(--font-weight-regular));
+    --Regular1-lineHeight:24px;
+
+    //Regular-Medium
+    --Regular2-fontFamily:'Inter',sans-serif;
+    --Regular2-fontSize:16px;
+    --Regular2-fontWeight:var(var(--font-weight-medium));
+    --Regular2-lineHeight:24px;
+
+    //Regular-Semibold
+    --Regular3-fontFamily:'Inter',sans-serif;
+    --Regular3-fontSize:16px;
+    --Regular3-fontWeight:var(var(--font-weight-semi-bold));
+    --Regular3-lineHeight:24px;
+
+    //Large-Regular
+    --Large1-fontFamily:'Inter',sans-serif;
+    --Large1-fontSize:18px;
+    --Large1-fontWeight:var(var(--font-weight-regular));
+    --Large1-lineHeight:24px;
+
+    //Large-Medium
+    --Large1-fontFamily:'Inter',sans-serif;
+    --Large1-fontSize:18px;
+    --Large1-fontWeight:var(var(--font-weight-medium));
+    --Large1-lineHeight:24px;
+
+    //Large-Semibold
+    --Large1-fontFamily:'Inter',sans-serif;
+    --Large1-fontSize:18px;
+    --Large1-fontWeight:var(var(--font-weight-semi-bold));
+    --Large1-lineHeight:24px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
